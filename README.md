@@ -1,4 +1,9 @@
-# Jimp Compact
+<div align="center">
+  <img width="200" height="200"
+    src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/crayon.png">
+  <h1>Jimp Compact</h1>
+  <p>Compact Version of <a href="https://github.com/oliver-moran/jimp">Jimp</a></p>
+</div>
 
 <!-- [![automated](https://flat.badgen.net/badge/publish/automated/green)](#) -->
 [![circle ci](https://flat.badgen.net/circleci/github/nuxt-community/jimp-compact)](https://circleci.com/gh/nuxt-community/jimp-compact)
@@ -6,14 +11,13 @@
 [![npm downloads](https://flat.badgen.net/npm/dt/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
 [![install size](https://flat.badgen.net/packagephobia/install/jimp-compact)](https://packagephobia.now.sh/result?p=jimp-compact)
 
-Compact Version of [Jimp](https://github.com/oliver-moran/jimp) -- An image processing library written entirely in JavaScript for Node.
-
-🔥 Compiled using [zeit/ncc](https://github.com/zeit/ncc).
+🔥 Compiled using [zeit/ncc](https://github.com/zeit/ncc)
 
 ## Why?
 
-- **32x** smaller install size with **all** features. (Jimp size is [![](https://flat.badgen.net/packagephobia/install/jimp)](https://packagephobia.now.sh/result?p=jimp))
-- Prevent annoying `core-js` warning.
+- **32x** smaller install size with **all** features. (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
+- Prevent annoying `core-js` warnings.
+
 
 ## Usage
 
