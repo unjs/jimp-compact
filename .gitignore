@@ -1,0 +1,9 @@
+*.log
+node_modules
+.vscode
+.DSStore
+*.iml
+.idea
+*.bak
+dist
+*.out.*

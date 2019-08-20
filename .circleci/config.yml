@@ -1,0 +1,40 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/project
+  docker:
+    - image: circleci/node
+
+jobs:
+    # Build
+    build:
+        <<: *defaults
+        steps:
+        - checkout
+        - restore_cache:
+            key: yarn-cache-{{ checksum "yarn.lock" }}
+        - run:
+            name: Install Dependencies
+            command: NODE_ENV=dev yarn
+        - save_cache:
+            key: yarn-cache-{{ checksum "yarn.lock" }}
+            paths:
+                - "node_modules"
+        - run:
+            name: Build
+            command: yarn build
+        - run:
+            name: Test
+            command: yarn test
+        # - run:
+        #     name: Publish
+        #     command: |
+        #         echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+        #         echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+        #         tag=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
+        #         [[ "$tag" == "master" ]] && tag="latest"
+        #         echo "Publish with tag: $tag"
+        #         npm publish -q --tag "$tag" || true
+        branches:
+            only:
+                - master
