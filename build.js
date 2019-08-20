@@ -9,7 +9,7 @@ async function main() {
 
   const opts = {
     cache: false,
-    minify: false,
+    minify: true,
     sourceMapRegister: false
   }
 
