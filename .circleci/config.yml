@@ -32,5 +32,6 @@ jobs:
                 echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
                 echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
                 branch=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
-                [[ ! "$branch" == "master" ]] && exit
-                npm publish -q || true
+                if [[ "$branch" == "master" ]] ; then
+                    npm publish -q || true
+                fi
