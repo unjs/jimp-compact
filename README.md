@@ -15,8 +15,7 @@
 
 ## Why?
 
-- **32x** smaller install size with **all** features. (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
-- Prevent annoying `core-js` warnings.
+This package has **32x** smaller install size with **all** features of original jimp (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
 
 
 ## Usage
