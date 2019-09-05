@@ -26,15 +26,15 @@ jobs:
         - run:
             name: Test
             command: yarn test
-        # - run:
-        #     name: Publish
-        #     command: |
-        #         echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-        #         echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-        #         tag=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
-        #         [[ "$tag" == "master" ]] && tag="latest"
-        #         echo "Publish with tag: $tag"
-        #         npm publish -q --tag "$tag" || true
+        - run:
+            name: Publish
+            command: |
+                echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+                echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+                tag=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
+                [[ "$tag" == "master" ]] && tag="latest"
+                echo "Publish with tag: $tag"
+                npm publish -q --tag "$tag" || true
         branches:
             only:
                 - master
