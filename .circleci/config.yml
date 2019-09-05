@@ -26,6 +26,9 @@ jobs:
         - run:
             name: Test
             command: yarn test
+    # Publish
+        <<: *defaults
+        steps:
         - run:
             name: Publish
             command: |
