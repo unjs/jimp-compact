@@ -31,7 +31,10 @@ jobs:
             command: |
                 echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
                 echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-                branch=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
-                if [[ "$branch" == "master" ]] ; then
-                    npm publish -q || true
-                fi
+                tag=`git branch | sed -n -e 's/^\* \(.*\)/\1/p'`
+                [[ "$tag" == "master" ]] && tag="latest"
+                echo "Publish with tag: $tag"
+                npm publish -q --tag "$tag" || true
+        branches:
+            only:
+                - master
