@@ -21,6 +21,6 @@
   "devDependencies": {
     "@zeit/ncc": "^0.20.4",
     "fs-extra": "^8.1.0",
-    "jimp": "^0.6.4"
+    "jimp": "^0.6.8"
   }
 }
