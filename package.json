@@ -19,7 +19,7 @@
     "test": "node ./test/index.js"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.21.1",
+    "@zeit/ncc": "^0.22.0",
     "fs-extra": "^9.0.0",
     "jimp": "^0.9.6"
   }
