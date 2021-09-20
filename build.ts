@@ -22,15 +22,15 @@ async function main() {
   await outputFile(output, code)
 
   const jimpDir = dirname(require.resolve('jimp/package.json'))
-  const { version } = await readJSON(resolve(jimpDir, 'package.json'))
+  // const { version } = await readJSON(resolve(jimpDir, 'package.json'))
 
-  await writeJSON(pkg, { ...await readJSON(pkg), version }, { spaces: 2 })
+  // await writeJSON(pkg, { ...await readJSON(pkg), version }, { spaces: 2 })
 
   await copy(resolve(jimpDir, 'fonts'), resolve(rootDir, 'fonts'))
 
   await copyFile(resolve(jimpDir, 'types/ts3.1/index.d.ts'), resolve(rootDir, 'dist/jimp.d.ts'))
 
-  console.log('jimp-compact@' + version)
+  // console.log('jimp-compact@' + version)
 }
 
 main().catch(error => {

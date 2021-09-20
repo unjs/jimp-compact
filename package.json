@@ -1,16 +1,18 @@
 {
   "name": "jimp-compact",
+  "version": "0.16.1-2",
   "description": "Compact version of Jimp",
   "repository": "unjs/jimp-compact",
   "license": "MIT",
+  "main": "./dist/jimp.cjs",
+  "types": "./dist/jimp.d.ts",
   "files": [
     "dist",
     "fonts"
   ],
-  "main": "./dist/jimp.cjs",
-  "types": "./dist/jimp.d.ts",
   "scripts": {
     "build": "jiti ./build",
+    "prepack": "yarn build",
     "test": "node ./test/index.js"
   },
   "devDependencies": {
@@ -21,6 +23,5 @@
     "jimp": "^0.16.1",
     "jiti": "^1.12.0",
     "typescript": "^4.4.3"
-  },
-  "version": "0.16.1"
+  }
 }
