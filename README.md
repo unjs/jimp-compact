@@ -10,7 +10,7 @@
 
 ## Why?
 
-This package has **27x** smaller install size with **all** features of original jimp (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
+This package has **27x** smaller install size with **all** features of original jimp (Jimp install size is [~33.8MB](https://packagephobia.now.sh/result?p=jimp)) by bundling all `node_modules` and removing extra files.
 
 ## Usage
 
