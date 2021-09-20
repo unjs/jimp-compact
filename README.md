@@ -1,26 +1,36 @@
-<div align="center">
-  <img width="200" height="200"
-    src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-11/256/crayon.png">
-  <h1>Jimp Compact</h1>
-  <p>Compact Version of <a href="https://github.com/oliver-moran/jimp">Jimp</a></p>
-</div>
+# ✏️ Jimp Compact
 
 <!-- [![automated](https://flat.badgen.net/badge/publish/automated/green)](#) -->
 <!-- [![circle ci](https://flat.badgen.net/circleci/github/unjs/jimp-compact)](https://circleci.com/gh/unjs/jimp-compact) -->
 [![npm version](https://flat.badgen.net/npm/v/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
-[![npm downloads](https://flat.badgen.net/npm/dt/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
+[![npm downloads](https://flat.badgen.net/npm/dm/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
 [![install size](https://flat.badgen.net/packagephobia/install/jimp-compact)](https://packagephobia.now.sh/result?p=jimp-compact)
 
-🔥 Compiled using [vercel/ncc](https://github.com/vercel/ncc)
+> Lightweight version of [Jimp](https://github.com/oliver-moran/jimp) compiled with [vercel/ncc](https://github.com/vercel/ncc)
 
 ## Why?
 
-This package has **32x** smaller install size with **all** features of original jimp (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
-
+This package has **27x** smaller install size with **all** features of original jimp (Jimp install size is [~16.3MB](https://packagephobia.now.sh/result?p=jimp))
 
 ## Usage
 
-Install and import/require `jimp-compact` instead of `jimp` NPM package.
+Install and import/require `jimp-compact` instead of `jimp` npm package.
+
+```sh
+# npm
+npm i jimp-compact
+
+# yarn
+yarn add jimp-compact
+```
+
+```js
+// ESM
+import Jimp from 'jimp-compact'
+
+// CJS
+const Jimp = require('jimp-compact')
+```
 
 See [jimp docs](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) for full usage.
 
