@@ -5,8 +5,8 @@
   <p>Compact Version of <a href="https://github.com/oliver-moran/jimp">Jimp</a></p>
 </div>
 
-[![automated](https://flat.badgen.net/badge/publish/automated/green)](#)
-[![circle ci](https://flat.badgen.net/circleci/github/nuxt-community/jimp-compact)](https://circleci.com/gh/nuxt-community/jimp-compact)
+<!-- [![automated](https://flat.badgen.net/badge/publish/automated/green)](#) -->
+<!-- [![circle ci](https://flat.badgen.net/circleci/github/unjs/jimp-compact)](https://circleci.com/gh/unjs/jimp-compact) -->
 [![npm version](https://flat.badgen.net/npm/v/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
 [![npm downloads](https://flat.badgen.net/npm/dt/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
 [![install size](https://flat.badgen.net/packagephobia/install/jimp-compact)](https://packagephobia.now.sh/result?p=jimp-compact)

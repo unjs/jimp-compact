@@ -2,14 +2,8 @@
   "name": "jimp-compact",
   "version": "0.16.1",
   "description": "Compact version of Jimp",
-  "repository": "nuxt-community/jimp-compact",
+  "repository": "unjs/jimp-compact",
   "license": "MIT",
-  "contributors": [
-    {
-      "name": "Pooya Parsa",
-      "email": "pooya@pi0.ir"
-    }
-  ],
   "files": [
     "dist"
   ],
