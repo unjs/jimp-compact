@@ -1,3 +1,5 @@
+import jimp from 'jimp/es'
+
 class JIMPBUffer {
   constructor(data, ...args) {
     if (args.length) {
@@ -12,6 +14,6 @@ class JIMPBUffer {
   }
 }
 
-global.JIMPBUffer = JIMPBUffer
+globalThis.JIMPBUffer = JIMPBUffer
 
-module.exports = require('jimp/es').default
+module.exports = jimp

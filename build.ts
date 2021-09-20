@@ -3,8 +3,8 @@ import { outputFile, readJSON, writeJSON } from 'fs-extra'
 import ncc from '@vercel/ncc'
 
 async function main() {
-  const input = resolve(__dirname, 'src', 'jimp.js')
-  const output = resolve(__dirname, 'dist', 'jimp.js')
+  const input = resolve(__dirname, 'src', 'jimp.ts')
+  const output = resolve(__dirname, 'dist', 'jimp.cjs')
   const pkg = resolve(__dirname, 'package.json')
 
   const opts = {
