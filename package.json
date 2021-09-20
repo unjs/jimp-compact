@@ -4,9 +4,11 @@
   "repository": "unjs/jimp-compact",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "fonts"
   ],
   "main": "./dist/jimp.cjs",
+  "types": "./dist/jimp.d.ts",
   "scripts": {
     "build": "jiti ./build",
     "test": "node ./test/index.js"

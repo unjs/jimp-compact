@@ -1,5 +1,5 @@
 import { resolve, dirname } from 'path'
-import { copy, outputFile, readJSON, writeJSON } from 'fs-extra'
+import { copy, copyFile, outputFile, readJSON, writeJSON } from 'fs-extra'
 import ncc from '@vercel/ncc'
 
 async function main() {
@@ -27,6 +27,8 @@ async function main() {
   await writeJSON(pkg, { ...await readJSON(pkg), version }, { spaces: 2 })
 
   await copy(resolve(jimpDir, 'fonts'), resolve(rootDir, 'fonts'))
+
+  await copyFile(resolve(jimpDir, 'types/ts3.1/index.d.ts'), resolve(rootDir, 'dist/jimp.d.ts'))
 
   console.log('jimp-compact@' + version)
 }
