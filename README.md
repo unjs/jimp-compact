@@ -34,6 +34,11 @@ const Jimp = require('jimp-compact')
 
 See [jimp docs](https://github.com/oliver-moran/jimp/tree/master/packages/jimp) for full usage.
 
+## Known Issues
+
+In order to make typescript working, you need to (also) install `jimp` in `devDependencies`!
+Track issue via [#39](https://github.com/unjs/jimp-compact/issues/39) and [#42](https://github.com/unjs/jimp-compact/issues/52).
+
 ## License
 
 MIT - Based on [Jimp](https://github.com/oliver-moran/jimp/blob/master/LICENSE)
