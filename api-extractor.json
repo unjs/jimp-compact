@@ -1,0 +1,67 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "./src/jimp.d.ts",
+  "bundledPackages": [
+    "jimp",
+    "@jimp/bmp",
+    "@jimp/core",
+    "@jimp/gif",
+    "@jimp/jpeg",
+    "@jimp/plugin-blit",
+    "@jimp/plugin-blur",
+    "@jimp/plugin-circle",
+    "@jimp/plugin-color",
+    "@jimp/plugin-contain",
+    "@jimp/plugin-cover",
+    "@jimp/plugin-crop",
+    "@jimp/plugin-displace",
+    "@jimp/plugin-dither",
+    "@jimp/plugin-fisheye",
+    "@jimp/plugin-flip",
+    "@jimp/plugin-gaussian",
+    "@jimp/plugin-invert",
+    "@jimp/plugin-mask",
+    "@jimp/plugin-normalize",
+    "@jimp/plugin-print",
+    "@jimp/plugin-resize",
+    "@jimp/plugin-rotate",
+    "@jimp/plugins",
+    "@jimp/plugin-scale",
+    "@jimp/plugin-shadow",
+    "@jimp/plugin-threshold",
+    "@jimp/png",
+    "@jimp/tiff",
+    "@jimp/types"
+  ],
+  "compiler": {},
+  "apiReport": {
+    "enabled": false
+  },
+  "docModel": {
+    "enabled": false
+  },
+  "dtsRollup": {
+    "enabled": true
+  },
+  "tsdocMetadata": {},
+  "messages": {
+    "compilerMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    },
+    "extractorMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      },
+      "ae-missing-release-tag": {
+        "logLevel": "none"
+      }
+    },
+    "tsdocMessageReporting": {
+      "default": {
+        "logLevel": "warning"
+      }
+    }
+  }
+}
