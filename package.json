@@ -1,6 +1,5 @@
 {
   "name": "jimp-compact",
-  "version": "0.16.1",
   "description": "Compact version of Jimp",
   "repository": "unjs/jimp-compact",
   "license": "MIT",
@@ -9,12 +8,16 @@
   ],
   "main": "dist/jimp.js",
   "scripts": {
-    "build": "node ./build.js",
+    "build": "jiti ./build",
     "test": "node ./test/index.js"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.12",
+    "@types/jimp": "^0.2.28",
     "@vercel/ncc": "^0.31.1",
     "fs-extra": "^10.0.0",
-    "jimp": "^0.16.1"
-  }
+    "jimp": "^0.16.1",
+    "jiti": "^1.12.0"
+  },
+  "version": "0.16.1"
 }
