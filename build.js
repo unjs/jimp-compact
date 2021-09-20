@@ -1,6 +1,6 @@
 const path = require('path')
 const fs = require('fs-extra')
-const ncc = require('@zeit/ncc')
+const ncc = require('@vercel/ncc')
 
 async function main() {
   const input = path.resolve(__dirname, 'src', 'jimp.js')

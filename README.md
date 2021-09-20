@@ -11,7 +11,7 @@
 [![npm downloads](https://flat.badgen.net/npm/dt/jimp-compact)](https://www.npmjs.com/package/jimp-compact)
 [![install size](https://flat.badgen.net/packagephobia/install/jimp-compact)](https://packagephobia.now.sh/result?p=jimp-compact)
 
-🔥 Compiled using [zeit/ncc](https://github.com/zeit/ncc)
+🔥 Compiled using [vercel/ncc](https://github.com/vercel/ncc)
 
 ## Why?
 

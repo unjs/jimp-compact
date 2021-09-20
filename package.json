@@ -1,6 +1,6 @@
 {
   "name": "jimp-compact",
-  "version": "0.0.0",
+  "version": "0.16.1",
   "description": "Compact version of Jimp",
   "repository": "nuxt-community/jimp-compact",
   "license": "MIT",
@@ -19,8 +19,8 @@
     "test": "node ./test/index.js"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3",
-    "fs-extra": "^9.0.1",
+    "@vercel/ncc": "^0.31.1",
+    "fs-extra": "^10.0.0",
     "jimp": "^0.16.1"
   }
 }
