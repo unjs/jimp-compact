@@ -16,4 +16,4 @@ class JIMPBUffer {
 
 globalThis.JIMPBUffer = JIMPBUffer
 
-module.exports = jimp
+export = jimp
