@@ -42,3 +42,6 @@ Track issue via [#39](https://github.com/unjs/jimp-compact/issues/39) and [#42](
 ## License
 
 MIT - Based on [Jimp](https://github.com/oliver-moran/jimp/blob/master/LICENSE)
+
+
+Minor update to documentation.
